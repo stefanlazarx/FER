@@ -15,11 +15,11 @@ using namespace std;
 
 void main()
 {
-	string path = "Resources/KA.AN1.39.tiff";
+	string path = "Tools/JAFFEDBASE/KA.AN1.39.tiff";
 	Mat img = imread(path);
 
 	CascadeClassifier face;
-	face.load("Resources/haarcascade_frontalface.xml");
+	face.load("Tools/haarcascade_frontalface.xml");
 
 	vector<Rect> faces;
 	face.detectMultiScale(img, faces, 1.1, 10);
